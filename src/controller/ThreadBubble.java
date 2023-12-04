@@ -22,20 +22,17 @@ public class ThreadBubble extends Thread {
 	}
 
 	private void bubblesort(int[] arr, int tam) {
-
 		if (tam == 1)
 			return;
-
 		for (int i = 0; i < tam - 1; i++) {
 			if (arr[i] > arr[i + 1]) {
 				int temp = arr[i];
 				arr[i] = arr[i + 1];
 				arr[i + 1] = temp;
-			}
+				}
 		}
 		bubblesort(arr, tam - 1);
-
-	}
+}
 
 	private String mostravetor() {
 		StringBuffer vetStr = new StringBuffer();
