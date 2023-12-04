@@ -1,1 +1,2 @@
 # SO_OrdenacaoThreads
+Criar uma classe java que receba um vetor de n posições com valores de 1 a 1000, aleatoriamente colocados e 2 threads façam a ordenação desse vetor. A primeira thread deverá usar quick sort (com recursividade) e a segunda deverá usar bubble sort (com recursividade). No final, deverá sair a quantidade de tempo que foi consumida por cada thread para executar a ordenação. As threads deverão ser inicializadas 3 vezes (Com vetor de 50 posições, de 1000 posições e 10000 posições e apresentar o resultado)
