@@ -2,7 +2,8 @@ package view;
 
 import java.util.Random;
 
-import controller.ThreadSort;
+import controller.ThreadBubble;
+import controller.ThreadQuick;
 
 public class Main {
 
@@ -11,19 +12,19 @@ public class Main {
 		int [] vetor1000 = gerarVetor(1000);
 		int [] vetor10000 = gerarVetor(10000);
 		
-		ThreadSort quick1 = new ThreadSort(vetor50, "quick", "1");
-		ThreadSort bubble1 = new ThreadSort(vetor50, "bubble", "1");
+		ThreadQuick quick1 = new ThreadQuick(vetor50, "1");
+		ThreadBubble bubble1 = new ThreadBubble(vetor50, "1");
 		quick1.start();
 		bubble1.start();
 		
-		ThreadSort quick2 = new ThreadSort(vetor1000, "quick", "2");
-		ThreadSort bubble2 = new ThreadSort(vetor1000, "bubble", "2");
+		ThreadQuick quick2 = new ThreadQuick(vetor1000, "2");
+		ThreadBubble bubble2 = new ThreadBubble(vetor1000, "2");
 		quick2.start();
 		bubble2.start();
-		ThreadSort quick3 = new ThreadSort(vetor10000, "quick", "3");
-		ThreadSort bubble3 = new ThreadSort(vetor10000, "bubble", "3"); 
+		ThreadQuick quick3 = new ThreadQuick(vetor10000, "3");
+		ThreadBubble bubble3 = new ThreadBubble(vetor10000, "3"); 
 		
-		//Caso apareça no console apenas os valores relacionados a interação 3, tirar a limitação de output do console nas configurações de RUN/DEBUG
+//Caso apareça no console apenas os valores relacionados a interação 3, tirar a limitação de output do console nas configurações de RUN/DEBUG
 		
 		quick3.start();
 		bubble3.start();
